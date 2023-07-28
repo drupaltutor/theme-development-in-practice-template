@@ -14,6 +14,9 @@ p, .paragraph {
 
 .lead {
   color: $text-color-light;
+  p {
+    color: $text-color-light;
+  }
 }
 
 h1,h2,h3,h4,h5,h6,

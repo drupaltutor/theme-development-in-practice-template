@@ -107,7 +107,7 @@
 }
 
 // about-section style
-.about-section {
+.section {
   z-index: 5;
   .has-shapes {
     z-index: -1;
@@ -167,7 +167,7 @@
 }
 
 // homepage_tab style
-.homepage_tab {
+.section-tabs {
   z-index: 5;
   @include tablet {
     overflow: hidden;
@@ -465,6 +465,48 @@
     text-align: center;
     color: $white;
     background-color: $primary-color;
+    &.h3 {
+      height: 90px;
+      width: 90px;
+      line-height: 90px;
+      font-size: 32px;
+      border-radius: 10px;
+
+    }
+  }
+}
+
+.service-item {
+  p {
+    color:  $text-color;
+  }
+  h3 {
+    transition: color 0.3s;
+  }
+  a {
+    &:hover {
+      h3 {color: $primary-color}
+      p {color: $text-color}
+    }
+  }
+  .icon {
+    display: inline-block;
+    height: 70px;
+    width: 70px;
+    line-height: 70px;
+    font-size: 24px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: $white;
+    background-color: $primary-color;
+    &.h3 {
+      height: 70px;
+      width: 70px;
+      line-height: 70px;
+      font-size: 24px;
+      border-radius: 8px;
+    }
   }
 }
 
@@ -832,5 +874,16 @@ textarea.form-control {
 .applyLoanModal {
   .modal-content {
     padding: 10px;
+  }
+}
+
+.section {
+  .container {
+    .section {
+      .container {
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
   }
 }

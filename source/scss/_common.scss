@@ -1,5 +1,5 @@
 body {
-  background-color: $body-color;
+  background-color: $body-background-color;
   overflow-x: hidden;
 }
 
@@ -15,7 +15,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: $body-color;
+  background-color: $body-background-color;
   z-index: 9999;
   display: flex;
   align-items: center;
@@ -62,11 +62,49 @@ a {
 .section {
   padding-top: 120px;
   padding-bottom: 120px;
+  position: relative;
 
+  &-xs {
+    padding-top: 0;
+    padding-bottom: 0;
+    &-top {
+      padding-top: 0;
+    }
+    &-bottom {
+      padding-bottom: 0;
+    }
+  }
   &-sm {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    &-top {
+      padding-top: 20px;
+    }
+    &-bottom {
+      padding-bottom: 20px;
+    }
+  }
+  &-md {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    &-top {
+      padding-top: 60px;
+    }
+    &-bottom {
+      padding-bottom: 60px;
+    }
+  }
+  &-lg {
     padding-top: 100px;
     padding-bottom: 100px;
+    &-top {
+      padding-top: 100px;
+    }
+    &-bottom {
+      padding-bottom: 100px;
+    }
   }
+
 
   &-title {
     margin-bottom: 30px;
